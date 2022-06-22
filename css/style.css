@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5%;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 40%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #ebebeb;
+    color: #ebebeb;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+label{
+    cursor: pointer;
+}
+label, output{
+    font-size: 24px;
+}
+output:after {
+    content: ' kg/m2';
+}
+output:before {
+    content: 'Twoje BMI ';
+    margin-right: 20px;
+}
+input{
+    margin: 10px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+}
+
+input:focus{
+    outline: none;
+}
+table{
+    margin-top: 40px;
+}
+tr{
+    position: relative;
+}
+td{
+    border-bottom: 1px solid #ebebeb;
+    width: 200px;
+    text-align: center;
+    color: #ebebeb;
+    padding: 10px;
+}
+tr:nth-child(4) td{
+    border-bottom: 1px solid rgb(84, 243, 84);
+}
+thead td{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+}
