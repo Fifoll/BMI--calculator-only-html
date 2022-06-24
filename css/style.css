@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 5%;
+    padding: 20px;
 }
 .wrapper{
     display: flex;
@@ -37,6 +37,7 @@ label, output{
 }
 output:after {
     content: ' kg/m2';
+    font-size: 20px;
 }
 output:before {
     content: 'Twoje BMI ';
@@ -74,4 +75,10 @@ thead td{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 24px;
+}
+
+@media (max-width: 500px){
+    .wrapper{
+        width: 80%;
+    }
 }
